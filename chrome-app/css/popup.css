@@ -1,29 +1,19 @@
 html,
-body {
-    min-height: 100%;
-}
-body {
-    margin: 0;
-}
+body {min-height: 100%; }
+body {margin: 0; }
 /**
  * Remove the gray background color from active links in IE 10.
  */
-a {
-    background-color: transparent;
-}
+a {background-color: transparent; }
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-a:focus {
-    outline: thin dotted;
-}
+a:focus {outline: thin dotted; }
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
-a:hover {
-    outline: 0;
-}
+a:hover {outline: 0; }
 /* Text-level semantics
    ========================================================================== */
 /**
