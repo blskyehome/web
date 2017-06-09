@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Admin index Examples</title>
-    <meta name="description" content="这是一个 index 页面">
-    <meta name="keywords" content="index">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="assets/css/amazeui.datatables.min.css" />
-    <link rel="stylesheet" href="assets/css/app.css">
+<?php require_once ("public/header.php"); ?>
     <link rel="stylesheet" href="assets/css/login.css">
-    <script src="assets/js/jquery.min.js"></script>
-
 </head>
 
 <body data-type="login">
@@ -40,30 +21,36 @@
         </div>
         <div class="tpl-login">
             <div class="tpl-login-content">
-                <div class="tpl-login-logo">
-
-                </div>
-
+                <div class="tpl-login-title">注册用户</div>
+                <span class="tpl-login-content-info">
+                  创建一个新的用户
+              </span>
 
 
                 <form class="am-form tpl-form-line-form">
-                    <div class="am-form-group">
-                        <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入账号">
+                    <div class="am-form-group zh-po-r">
+                        <input type="text" class="tpl-form-input" id="user-name" placeholder="邮箱">
+                        <button class="am-btn login-yan">获取验证码</button>
+                    </div>
 
+                    <div class="am-form-group">
+                        <input type="text" class="tpl-form-input" id="user-name" placeholder="验证码">
+                    </div>
+
+                    <div class="am-form-group">
+                        <input type="text" class="tpl-form-input" id="user-name" placeholder="用户名">
                     </div>
 
                     <div class="am-form-group">
                         <input type="password" class="tpl-form-input" id="user-name" placeholder="请输入密码">
-
                     </div>
-                    <div class="am-form-group tpl-login-remember-me">
-                        <input id="remember-me" type="checkbox">
-                        <label for="remember-me">
-       
-                        记住密码
-                         </label>
-                         <span class="am-fr">没有账号？<a href="sign-up.html">立即注册</a></span>
 
+                    <div class="am-form-group">
+                        <input type="password" class="tpl-form-input" id="user-name" placeholder="再次输入密码">
+                    </div>
+
+                    <div class="am-form-group tpl-login-remember-me am-pagination-right">
+                        已有账号 <a href="login.html">返回登录</a> 
                     </div>
 
 
