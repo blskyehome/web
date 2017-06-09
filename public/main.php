@@ -175,7 +175,7 @@
 
    <!-- 菜单 -->
    <ul class="sidebar-nav">
-       <li class="sidebar-nav-heading">Components <span class="sidebar-nav-heading-info"> 附加组件</span></li>
+       <li class="sidebar-nav-heading"><a href="navigation.php" class="naviga">常用网址导航</a></li>
        <li class="sidebar-nav-link">
            <a href="javascript:;" class="sidebar-nav-sub-title">
                <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
@@ -183,13 +183,13 @@
            </a>
            <ul class="sidebar-nav sidebar-nav-sub">
                <li class="sidebar-nav-link">
-                   <a href="table-list.html">
+                   <a href="index.php">
                        <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 个人资料
                    </a>
                </li>
 
                <li class="sidebar-nav-link">
-                   <a href="table-list-img.html">
+                   <a href="404.php">
                        <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 修改密码
                    </a>
                </li>
@@ -222,4 +222,5 @@
        </li>
    </ul>
 </div>
-
+<!-- 内容区域 -->
+<div class="tpl-content-wrapper">
