@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="assets/css/public.css">
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="assets/js/theme.js"></script>
     <div class="am-g tpl-g">
         <?php require_once ("public/main.php"); ?>

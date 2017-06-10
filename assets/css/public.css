@@ -18,6 +18,9 @@
 .nav-class .list {
     padding: 7px 0 2px;
 }
+.nav-class .list>.cf{
+	margin-bottom: 2px;
+}
 .nav-class .list ul li {
     position: relative;
     float: left;
@@ -25,22 +28,29 @@
 }
 .nav-class .list ul li.col-1 {
     text-align: center;
-    width: 75px;
+    width: 5%
+    min-width: 75px;
     margin-right: 10px;
+}
+.nav-class .list ul li.col-2 {
+    width: 90%;
 }
 .nav-class .list ul li.col-1 a {
     color: #32c5d2;
 }
 .nav-class .list ul li.col-2 ul {
-    width: 746px;
+    width: 100%;
     height: 20px;
-    overflow: hidden;
     position: relative;
     margin: 0;
 }
 .nav-class .list ul li.col-2 ul li {
-    width: 90px;
-    padding-bottom: 0;
+    width: 110px;
+    padding: 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
 }
 .nav-class .list ul li a {
     line-height: 20px;
