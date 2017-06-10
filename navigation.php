@@ -8,17 +8,17 @@
         <?php require_once ("public/main.php"); ?>
         <div class="row-content am-cf">
             <ul class="nav-link">
-              <li><a href="https://www.baidu.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/baidu.jpg" /></a></li>
-              <li><a href="http://weibo.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/sina.jpg" /></a></li>
-              <li><a href="http://www.tmall.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/tmall.jpg" /></a></li>
-              <li><a href="http://www.taobao.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/taobao.jpg" /></a></li>
-              <li><a href="http://www.jd.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/jd.jpg" /></a></li>
-              <li><a href="http://www.iqiyi.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/aqiy.jpg" /></a></li>
-              <li><a href="https://v.qq.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/vqq.jpg" /></a></li>
-              <li><a href="http://www.youku.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/youku.jpg" /></a></li>
-              <li><a href="http://tv.sohu.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/sohu.jpg" /></a></li>
-              <li><a href="http://yt.58.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/58.jpg" /></a></li>
-              <li><a href="http://www.ganji.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/ganji.jpg" /></a></li>
+              <li><a href="https://www.baidu.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/baidu.png" /></a></li>
+              <li><a href="http://weibo.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/sina.png" /></a></li>
+              <li><a href="http://www.tmall.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/tmall.png" /></a></li>
+              <li><a href="http://www.taobao.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/taobao.png" /></a></li>
+              <li><a href="http://www.jd.com" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/jd.png" /></a></li>
+              <li><a href="http://www.iqiyi.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/iqiyi.png" /></a></li>
+              <li><a href="https://v.qq.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/vqq.png" /></a></li>
+              <li><a href="http://www.youku.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/youku.png" /></a></li>
+              <li><a href="http://tv.sohu.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/sohu.png" /></a></li>
+              <li><a href="http://yt.58.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/58.png" /></a></li>
+              <li><a href="http://www.ganji.com/" target="_blank"><img class="am-thumbnail" src="assets/img/nav-icon/ganji.png" /></a></li>
             </ul>
         </div>
         <div class="row-content am-cf">
@@ -41,9 +41,9 @@
                                     <li><a href="http://kan.sogou.com/live/" target="_blank">惠喵</a></li>
                                     <li><a href="http://show.sogou.com/" target="_blank">1号店</a></li>
                                     <li><a href="http://www.letv.com/" target="_blank">当当网</a></li>
-                                    <div class="clear"></div>
                                 </ul>
                             </li>
+                            <div class="clear"></div>
                         </ul>
                         <ul class="cf">
                             <li class="col-1"><a href="http://kan.sogou.com/" target="_blank">[视频]</a></li>
@@ -55,10 +55,10 @@
                                     <li><a href="http://kan.sogou.com/dongman/" target="_blank">腾讯视频</a></li>
                                     <li><a href="http://kan.sogou.com/live/" target="_blank">搜狐视频</a></li>
                                     <li><a href="http://show.sogou.com/" target="_blank">芒果tv</a></li>
-                                    <li><a href="http://www.letv.com/" target="_blank">bilibili</a></li>
-                                    <div class="clear"></div>
+                                    <li><a href="http://www.letv.com/" target="_blank">bilibili</a></li>                                  
                                 </ul>
                             </li>
+                            <div class="clear"></div>
                         </ul>
                         <div class="clear"></div>
                     </div>
