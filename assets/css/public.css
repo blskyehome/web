@@ -3,6 +3,15 @@
 .sidebar-nav .naviga{
 	color: inherit;
 }
+.am-tabs-bd .am-tab-panel {
+    padding: 10px 0;
+}
+.am-tabs-bd {
+    border: none;
+}
+.am-tab-panel .am-u-sm-12{
+    padding: 0;
+}
 .nav-link>li{
 	float: left;
 	margin: 10px;
@@ -32,11 +41,11 @@
     min-width: 75px;
     margin-right: 10px;
 }
+.nav-class .list ul li.col-1 a {
+    font-weight: bold;
+}
 .nav-class .list ul li.col-2 {
     width: 90%;
-}
-.nav-class .list ul li.col-1 a {
-    color: #32c5d2;
 }
 .nav-class .list ul li.col-2 ul {
     width: 100%;
@@ -56,4 +65,15 @@
     line-height: 20px;
     font-size: 14px;
     color: #444;
+}
+.setnav-ul li{
+    float: left;
+    padding: 5px 15px;
+}
+.am-panel-hd .setLink{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 14px;
+    cursor: pointer;
 }
