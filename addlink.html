@@ -10,6 +10,7 @@
 	    .clear{clear: both; height: 0;}
     	.al_box{position:relative; width: 725px; margin: 0 auto;}
     	.p_20{}
+    	li{list-style: none;}
     	.p_20>span{line-height: 40px; height: 40px; font-size: 13px; display: inline-block; margin-top: 12px;}
     	.p_20>span>em{font-style: normal; color: red;}
     	.p_20 ul li{position:relative; list-style-type: none; font-size: 13px; float: left; margin: 5px 10px 5px 0px; border: 1px solid #A1C0F9;}
@@ -22,7 +23,15 @@
     	.save {display: inline-block; background: #3B7CF2; color: #fff; font-size: 15px; padding: 3px 18px; margin-bottom: 20px;}
     	.save:hover {background: #3B62F2; color: #fff;}
     	.p_20 .li-move:hover{border-color: #A1C0F9; box-shadow: 0 0 6px 0 rgba(161, 192, 249, 0.5);}
-    	.p_20 .active{ border:1px dashed red;}
+    	.p_20 li.active{ border:1px dashed red;}
+    	ul.cf1 {width: 440px; margin: 0; padding-top: 22px; }
+    	.cf1:before, .cf1:after {content: "\20"; display: table; }
+    	ul.cf1 li {width: 440px; float: left; padding-bottom: 10px; }
+    	ul.cf1 li label {float: left; width: 44px; line-height: 30px; font-size: 13px; font-weight: 100;}
+    	ul.cf1 li input {float: left; width: 335px; height: 30px; padding: 6px; border: 1px solid #97bdea; }
+    	ul.cf1 .btn {padding: 12px 0 22px; text-align: center; }
+    	ul.cf1 .btn .i-btn4 {text-align: center;display: inline-block; background: #3B7CF2; color: #fff; font-size: 15px; padding: 3px 18px; margin-bottom: 20px;width: 78px; border-radius: 3px;}
+    	.cf1:after {clear: both; }
     --></style>
 </head>
 <body>
@@ -31,10 +40,18 @@
 			<span><em>提示：</em>移动鼠标，添加、删除、编辑、移动网址</span>
 		</div>
 		<div class="p_20">
-			<ul style="padding: 0;" class="ul-move">
+			<ul style="padding: 0;" id="ul1">
 				<li class="li-move">
 					<span class="al-li1 move"><i class="am-icon-arrows"></i></span>
 					<a href="" class="al-li2">新浪微博<i class="am-icon-times-circle"></i></a>
+				</li>
+				<li class="li-move">
+					<span class="al-li1 move"><i class="am-icon-arrows"></i></span>
+					<a href="" class="al-li2">百度<i class="am-icon-times-circle"></i></a>
+				</li>
+				<li class="li-move">
+					<span class="al-li1 move"><i class="am-icon-arrows"></i></span>
+					<a href="" class="al-li2">聚美优品<i class="am-icon-times-circle"></i></a>
 				</li>
 				<li class="li-add">
 					<span class="al-li1 add"><i class="am-icon-plus-circle"></i></span>
@@ -49,8 +66,8 @@
 	</div>
 	<script>
 		window.onload = function() {
-				var oUl= getElementsByClassName('ul-move')
-				var aLi = oUl.getElementsByClassName("li-move");
+				var oUl= document.getElementById("ul1");
+				var aLi = oUl.getElementsByTagName("li");
 				var disX = 0;
 				var disY = 0;
 				var minZindex = 1;
@@ -70,6 +87,9 @@
 				}
 				//拖拽
 				function setDrag(obj){
+					// obj.onmouseover = function(){
+					// 	obj.style.cursor = "move";
+					// }
 					obj.onmousedown = function(event){
 						var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
 						var scrollLeft = document.documentElement.scrollLeft||document.body.scrollLeft;
@@ -218,6 +238,26 @@
 				}
 			},30);
 		}
+	</script>
+	<script>
+		//是否删除
+		$('.am-icon-times-circle').on('click',function() {
+			layer.msg('大部分参数都是可以公用的<br>合理搭配，展示不一样的风格', {
+			  time: 20000, //20s后自动关闭
+			  btn: ['确定', '取消']
+			});
+			// $(this).parent().parent('li').remove();
+		});
+
+		// 添加网址
+		$('.am-icon-plus-circle').on('click', function(){
+		  layer.open({
+		  type: 1,
+		  area: ['480px', '250px'],
+		  shadeClose: false, //点击遮罩关闭
+		  content: '<ul class="cf1"><li><label>网址:</label><input class="url" type="text" value="http://"></li><li><label>名称:</label><input class="title" type="text"></li><li class="btn"><a href="javascript:;" class="save i-btn4">保存</a> &nbsp;<a href="javascript:;" class="cancel i-btn4">取消</a></li></ul>'
+		  });
+		});
 	</script>
 </body>
 </html>
