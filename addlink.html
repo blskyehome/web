@@ -249,7 +249,8 @@
 		$('.am-icon-times-circle').on('click', function() {
 			layer.msg('大部分参数都是可以公用的<br>合理搭配，展示不一样的风格', {
 			  time: 20000, //20s后自动关闭
-			  btn: ['确定', '取消']
+			  btn: ['确定', '取消'],
+			  zIndex:19891015
 			});
 			// $(this).parent().parent('li').remove();
 		});
@@ -260,6 +261,7 @@
 		  type: 1,
 		  area: ['480px', '250px'],
 		  shadeClose: false, //点击遮罩关闭
+		  zIndex:19891015,
 		  content: '<ul class="cf1"><li><label>网址:</label><input class="url" type="text" value="http://"></li><li><label>名称:</label><input class="title" type="text"></li><li class="btn"><a href="javascript:;" class="save i-btn4">保存</a> &nbsp;<a href="javascript:;" class="cancel i-btn4">取消</a></li></ul>'
 		  });
 		});

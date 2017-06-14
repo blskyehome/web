@@ -18,7 +18,7 @@
                 </div>
 
             </div>
-
+                <div class="row-content am-cf">
                 <div class="row am-cf">
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
                         <div class="tpl-user-card am-text-center widget-body-lg">
@@ -138,6 +138,7 @@
                         </div>
 
                     </div>
+                </div>
                 </div>
                 <div class="row-content am-cf">
                     <div class="row  am-cf">

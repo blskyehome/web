@@ -206,7 +206,7 @@
                             <section class="am-panel am-panel-default nav-class">
                               <header class="am-panel-hd">
                                 <h3 class="am-panel-title">您最常访问的网址</h3>
-                                <!-- <div class="setLink"><i class="am-icon-cog"></i> 设置网址</div> -->
+                                <div class="setLink setmodal"><i class="am-icon-cog"></i> 设置网址</div>
                               </header>
                               <div class="am-panel-bd">
                                 <ul class="setnav-ul">

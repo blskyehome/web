@@ -16,6 +16,9 @@
 	float: left;
 	margin: 10px;
 }
+.nav-link>li:hover {
+    transition: all 0.5s;
+}
 .nav-link img{
 	width: 110px; 
 	height: 60px;
