@@ -961,6 +961,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-white .tpl-form-line-form .am-form-group {
   /*padding: 20px 0;*/
+  position: relative;
 }
 .theme-white .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
   color: #999;
@@ -1593,6 +1594,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-black .tpl-form-line-form .am-form-group {
   /*padding: 20px 0;*/
+  position: relative;
 }
 .theme-black .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
   color: #999;
