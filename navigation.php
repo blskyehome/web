@@ -4,7 +4,7 @@
 
 <body data-type="widgets">
     <script src="assets/js/theme.js"></script>
-    <div class="am-g tpl-g">
+    <div class="am-g tpl-g" id="app">
         <?php require_once ("public/main.php"); ?>
         <div class="row-content am-cf">
             <ul class="nav-link">
@@ -34,7 +34,7 @@
                     >
                   <ul class="am-tabs-nav am-cf">
                       <li class="am-active"><a href="[data-tab-panel-0]">名站导航</a></li>
-                      <li class=""><a href="[data-tab-panel-1]">快速通道</a></li>
+                      <li class=""><a href="[data-tab-panel-]" @click="getLinkItem">快速通道</a></li>
                   </ul>
                   <div class="am-tabs-bd">
                       <div data-tab-panel-0 class="am-tab-panel am-active">
@@ -203,26 +203,16 @@
                       </div>
                       <div data-tab-panel-1 class="am-tab-panel ">
                         <div class="am-u-sm-12">
-                            <section class="am-panel am-panel-default nav-class">
+                            <section class="am-panel am-panel-default nav-class" v-for="item in linkItems">
                               <header class="am-panel-hd">
-                                <h3 class="am-panel-title">您最常访问的网址</h3>
+                                <h3 class="am-panel-title" v-text="item.name"></h3>
                                 <div class="setLink setmodal"><i class="am-icon-cog"></i> 设置网址</div>
                               </header>
                               <div class="am-panel-bd">
                                 <ul class="setnav-ul">
-                                    <li><a href="http://cn.vuejs.org/v2/guide/" target="_blank">vue.js</a></li>
-                                    <li><a href="https://angular.io/docs/ts/latest/" target="_blank">angular</a></li>
-                                    <li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/?t=20161102" target="_blank">微信小程序</a></li>
-                                    <li><a href="http://www.liaoxuefeng.com/" target="_blank">廖雪峰官方网站</a></li>
-                                    <li><a href="http://www.w3school.com.cn/" target="_blank">W3school</a></li>   
-                                    <li><a href="http://www.layui.com/doc/" target="_blank">layui</a></li>
-                                    <li><a href="http://plugins.amazeui.org/" target="_blank">Amaze UI Magnigier</a></li>
-                                    <li><a href="http://www.runoob.com/" target="_blank">runoob</a></li>                                                          
-                                    <li><a href="http://doc.thinkphp.cn/manual.html" target="_blank">ThinkPHP 3.1</a></li>                                  
-                                    <li><a href="http://www.kancloud.cn/thinkphp/thinkphp_quickstart/2140" target="_blank">ThinkPHP 3.2</a></li>
-                                    <li><a href="http://www.kancloud.cn/manual/thinkphp5/118003" target="_blank">ThinkPHP 5.0</a></li>
+                                    <li  v-for="link in item.link_list.data"><a v-bind:href="link.url" target="_blank" v-text="link.title"></a></li>
                                     <li><a href="javascript:;" class="setmodal"><i class="am-icon-plus-circle"></i> 设置网址</a></li>
-                                    <div class="clear"></div>                                 
+                                    <div class="clear"></div>
                                 </ul>
                               </div>
                             </section>
@@ -235,6 +225,12 @@
         </div>      
     <?php require_once ("public/footer.php"); ?>
 
+        <script src="base/vue/vue.js"></script>
+        <script src="base/vue/vue-router.js"></script>
+        <script src="base/vue/axios.min.js"></script>
+        <script src="base/js/common.js"></script>
+
+        <script src="base/js/nav.js"></script>
 </body>
 
 </html>
