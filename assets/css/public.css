@@ -57,8 +57,8 @@
     margin: 0;
 }
 .nav-class .list ul li.col-2 ul li {
-    width: 110px;
-    padding: 0 5px;
+    /*width: 110px;*/
+    padding: 0 20px;
     overflow: hidden;
     white-space: nowrap;
     word-break: break-all;
